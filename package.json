@@ -1,0 +1,16 @@
+{
+  "name": "rovarspraket-translator",
+  "version": "1.0.0",
+  "description": "it's a rovarspraket translator",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tahmid",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "fun-responses": "^2.0.0"
+  }
+}

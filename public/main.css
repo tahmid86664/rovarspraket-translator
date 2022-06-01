@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #00142b;
+}
+
+h1 {
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  background-color: #00142b;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.rovarspraket {
+  display: flex;
+  height: 400px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rovarspraket__inner {
+  display: flex;
+  width: 80%;
+  height: 300px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.rovTran {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  align-items: center;
+}
+
+.engTran {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  align-items: center;
+}
+
+.rovTran__textArea {
+  width: 100%;
+  height: 80%;
+  resize: none;
+}
+
+.rovTran__submit {
+  width: 270px;
+  height: 60px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #00142b;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.rovTran__submit:hover {
+  opacity: 0.8;
+}
+
+.engTran__textArea {
+  width: 100%;
+  height: 80%;
+  resize: none;
+}
+
+.jokes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  padding: 0 20px;
+}
+
+.joke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 10px 20px;
+  margin-right: 25px;
+  border: 1.3px solid #00142b;
+  border-radius: 10px;
+}
+
+.joke__upper {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: justify;
+  height: 220px;
+}
+
+.joke__lang {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.joke__translate {
+  padding: 0 10px;
+  width: 250px;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #00142b;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.joke__translate:hover {
+  opacity: 0.8;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.joke__genButton {
+  padding: 0 10px;
+  width: 250px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #00142b;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.joke__genButton:hover {
+  opacity: 0.8;
+}

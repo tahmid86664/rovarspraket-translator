@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+    <title>Rovarspraket Translator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Rovarspraket Translator</h1>
+    </header>
+    <div class="body">
+      <div class="rovarspraket">
+        <div class="rovarspraket__inner">
+          <div class="radio_button">
+            <input type="radio" id="rov" name="translator" value="Rovarspraket" checked>
+            <label for="html">Rovarspraket</label><br>
+            <input type="radio" id="eng" name="translator" value="English">
+            <label for="html">English</label><br>
+          </div>
+          <div class="rovTran">
+            <textarea
+              class="rovTran__textArea"
+              id="rovTran__textArea"
+              placeholder="Please enter text ..."
+            ></textarea>
+          </div>
+          <div class="engTran">
+            <textarea
+              class="engTran__textArea"
+              id="engTran__textArea"
+              disabled
+            ></textarea>
+          </div>
+        </div>
+        <button class="rovTran__submit">Translate to Rovarspraket</button>
+      </div>
+      <h2>Jokes of the day!!!</h2>
+      <div class="jokes">
+        <div class="joke">
+          <div class="joke__upper">
+          </div>
+          <div class="joke__lower">
+            <p class="joke__lang">&#9830 English</p>
+            <button class="joke__translate">Translate to Rovarspraket</button>
+          </div>
+        </div>
+        <div class="joke__generate">
+          <button class="joke__genButton">Generate Joke 🤭 </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="./translate.js"></script>
+  </body>
+</html>
