@@ -11,14 +11,12 @@ router.get("/jokes", async (req, res) => {
 
 router.post("/normal", (req, res) => {
   const text = req.body.text;
-  console.log(text);
   const rovTranslated = rovarspraketTranslator(text);
   res.send(rovTranslated);
 });
 
 router.post("/rovarsprak", (req, res) => {
   const text = req.body.text;
-  console.log(text);
   const engTranslated = englishTranslator(text);
   res.send(engTranslated);
 });
